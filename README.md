@@ -1,5 +1,3 @@
-# 9월 4일
-
 # 9월 25일
 
 ## Next.js 기초와 내장 컴포넌트
@@ -77,5 +75,36 @@ function Greet(props) {
 
 export default Greet;
 ```
+## 컴포넌트에서 경로 매개변수 사용하기
+
+# pages 밖에서는 getServerSideProps나 getStaticProps 함수를 사용하지 못하는데, 어떻게 경로 매개변수를 컴포넌트 안에서 사용할 수 있을까요?
+
+1. useRouter Hook 을 이용하면 컴포넌트 안에서 경로 매개변수를 사용할 수 있습니다.
+
+2. useRouter는 next/router에서 가져올 수 있습니다.
+
+3. useRouter Hook을 사용해서 query 매개변수를 가져옵니다.
+
+4. 콘솔에 로그를 출력하면 매개변수와 쿼리 문자열들을 어떻게 전달하는지 알 수 있습니다.
+
+5. greet/Mitch?foo=true 로 접속하여 log를 확인해 봅니다.
+
+```
+import {useRouter} from "next/router";
+
+function Greet(){
+    const {query} = useRouter()
+    console.log(query)
+    return <h1>Hello {query.name}</h1>
+}
+export default Greet;
+```
+
+
+
+
+
+
+# 9월 4일
 
 
