@@ -77,7 +77,7 @@ export default Greet;
 ```
 ## 컴포넌트에서 경로 매개변수 사용하기
 
-# pages 밖에서는 getServerSideProps나 getStaticProps 함수를 사용하지 못하는데, 어떻게 경로 매개변수를 컴포넌트 안에서 사용할 수 있을까요?
+### pages 밖에서는 getServerSideProps나 getStaticProps 함수를 사용하지 못하는데, 어떻게 경로 매개변수를 컴포넌트 안에서 사용할 수 있을까요?
 
 1. useRouter Hook 을 이용하면 컴포넌트 안에서 경로 매개변수를 사용할 수 있습니다.
 
