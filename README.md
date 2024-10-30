@@ -25,6 +25,16 @@ body {
 
 7. 또 한가지 방법은 class로 선언된 요소에 :global 키워드를 추가해 줍니다. .button :global()
 
+## SASS
+
+1. Next에서 기본으로 지원하는 건 처리기 입니다.
+
+2. 단, 패키지 설치가 필요합니다. $ npm install sass
+
+3. SASS 및 SCSS(Sassy CSS) 문법으로 CSS Module을 만들고 사용할 수 있습니다.
+
+
+
 # 10월 25일
 
 ## 클라이언트에서 REST API 사용하기
