@@ -1,13 +1,17 @@
-.foo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6rem;
-    min-height: 100vh;
-    color: #cacaff;
+body.light{
+    background-color: white;
+    color: black;
 }
 
-.fool{
-    
+body.light a{
+    color: black;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+body.dark a{
+   color: white; 
 }

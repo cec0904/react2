@@ -1,3 +1,32 @@
+# 11월 13일
+
+## Context API 개요
+
+1. Context는 UX구축에 많이 사용되는 React의 기능입니다.
+
+2. React는 16.3 버전부터 정식적으로 context.api를 지원하고 있습니다.
+
+3. 일반적으로 props는 부모에서 자식으로 전달되는 단방향 통신을 합니다.
+
+4. Context API는 특정 component가 props를 사용하지 않고, 하위 component를 포함한 모든 component에 데이터를 공유할 수 있는 기능을 제공합니다.
+
+5. 즉 '전역'으로 데이터를 사용할 수 있도록 해줍니다.
+
+6. 예를 들어 사용자의 로그인 상태나, 쇼핑카트의 물품 수량 등을 표시할 때 사용됩니다.
+
+7. Context API는 createContext, Provider, useContext 개념만 알면 적용이 가능합니다.
+
+8. 간혹 Consumer를 useContext 대신 사용하는 경우가 있지만, function형 component에서는 많이 사용하지 않습니다.
+
+9. 두가지의 차이
+
+```
+사용 Consumer - 클래스형, 함수형 컴포넌트 모두 사용 가능 useContext - 함수형 컴포넌트에서 주로 사용
+문법 Consumer - JSX내에서 명시적으로 작성 useContext - H???으로 간결하게 사용
+장점 Consumer - 클래스형 컴포넌트와의 호환성 useContext - 간결하고 직관적인 코드 작성, 함수형 컴포넌트와의 자연스로운 통합
+단점 Consumer - JSX내에 추가적인 요소가 필요, 코드가 다소 복잡해 보일 수 있음 useContext - 클래스형 컴포넌트에서는 사용할 수 없음
+```
+
 # 10월 30일
 
 ## 
